@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backk"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="returnback"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+
+        <TextView
+
+            android:id="@+id/tv_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:onClick="goforward"
+            android:text="Log in"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Create Your Account"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_usr"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn"
+            android:elevation="8dp"
+            android:hint="Your Name"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn"
+            android:elevation="8dp"
+            android:hint="Your Email"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn"
+            android:elevation="8dp"
+            android:hint="Create password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_date"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn"
+            android:elevation="8dp"
+            android:hint="Date of Birth"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+
+            android:id="@+id/tv_gen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="20dp"
+            android:text="                 Choose Your Gender  :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="oncheck"
+                android:text="Male"
+                android:textColor="#304FFE" />
+
+            <RadioButton
+                android:id="@+id/radio_F"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="oncheck"
+                android:text="Female"
+                android:textColor="#C51162" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="208dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/regbtn"
+            android:backgroundTint="@color/colorPrimary"
+            android:elevation="5dp"
+            android:padding="0dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="25dp"
+            android:text="By Pressing 'Register'You Agree to our Terms and\n                               Conditions" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
